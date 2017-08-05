@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace 'api' do
     namespace 'v1' do
       match '/accounts' => 'accounts#create', :via => :post
+      match '/vaults' => 'vaults#create', :via => :post
     end
   end
 end

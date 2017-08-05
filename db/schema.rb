@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170805160226) do
+ActiveRecord::Schema.define(version: 20170805181729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20170805160226) do
   end
 
   create_table "vaults", force: :cascade do |t|
-    t.decimal "value"
-    t.string "type"
+    t.decimal "value", precision: 8, scale: 2
+    t.integer "type_value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "account_id"
