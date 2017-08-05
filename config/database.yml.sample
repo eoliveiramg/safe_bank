@@ -1,7 +1,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  password: 
+  password:
   pool: <%= ENV.fetch("PG_POOL", 32) %>
 
 development:
