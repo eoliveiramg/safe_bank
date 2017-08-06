@@ -3,7 +3,7 @@ module Api
     class VaultsController < ApplicationController
       attr_reader :vault
 
-      # POST /accounts
+      # POST /vaults
       def create
         @vault = VaultFactory.build(vault_params)
         vault.save!
