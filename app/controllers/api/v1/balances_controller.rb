@@ -14,7 +14,7 @@ module Api
 
         respond_with :api, :v1, balance, status: :ok
       rescue ActiveRecord::RecordNotFound
-        render json: { message: "Account does not existe" }, status: :not_found
+        render json: { message: 'Account does not exists' }, status: :not_found
       end
 
       private

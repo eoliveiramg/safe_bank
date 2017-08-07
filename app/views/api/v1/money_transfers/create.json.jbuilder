@@ -1,0 +1,1 @@
+json.extract! @money_transfer, :source_account, :destination_account
